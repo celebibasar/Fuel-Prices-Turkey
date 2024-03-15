@@ -66,4 +66,33 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    val koin_android_version = "3.4.0"
+    val koin_android_compose_version = "3.4.4"
+    val retrofit_version = "2.9.0"
+    val nav_version = "2.6.0"
+
+    // Koin
+    implementation ("io.insert-koin:koin-android:$koin_android_version")
+    implementation ("io.insert-koin:koin-androidx-compose:$koin_android_compose_version")
+
+    // Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:$retrofit_version")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    implementation ("com.squareup.okhttp:okhttp:2.7.5")
+
+    // https://mvnrepository.com/artifact/org.json/json
+    implementation("org.json:json:20231013")
+
+    // Coil
+    implementation("io.coil-kt:coil-compose:2.4.0")
+
+    // System Ui Controller
+    implementation ("com.google.accompanist:accompanist-systemuicontroller:0.30.1")
+
+    // Navigation
+    implementation ("androidx.navigation:navigation-compose:$nav_version")
+
+    implementation ("androidx.compose.material:material-icons-extended:1.4.3")
 }
