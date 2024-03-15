@@ -1,8 +1,8 @@
 package com.basarcelebi.fuelpriceapp.repositories
 
 import com.basarcelebi.fuelpriceapp.models.BaseModel
-import com.basarcelebi.fuelpriceapp.models.IlAdi
+import com.basarcelebi.fuelpriceapp.models.FuelPrices
 
 interface FuelRepo {
-    suspend fun getDailyPrice(locationName: String): BaseModel<List<IlAdi>>
+    suspend fun getDailyPrice(locationName: String): BaseModel<List<FuelPrices>>
 }

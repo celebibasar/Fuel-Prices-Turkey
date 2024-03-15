@@ -5,13 +5,13 @@ import com.basarcelebi.fuelpriceapp.network.Api
 import com.basarcelebi.fuelpriceapp.network.HeaderInterceptor
 import com.basarcelebi.fuelpriceapp.repositories.FuelRepo
 import com.basarcelebi.fuelpriceapp.repositories.FuelRepoImpl
-import okhttp3.OkHttp
 import okhttp3.OkHttpClient
 import org.koin.core.context.startKoin
 import org.koin.dsl.bind
 import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+
 class App: Application() {
     override fun onCreate() {
         super.onCreate()
@@ -25,7 +25,7 @@ class App: Application() {
                         .Builder()
                         .addConverterFactory(GsonConverterFactory.create())
                         .client(client)
-                        .baseUrl("http://hasanadiguzel.com.tr/")
+                        .baseUrl(" ... ... ... ... ... ...")
                         .build()
                 }
                 single {

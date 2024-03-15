@@ -1,6 +1,6 @@
 package com.basarcelebi.fuelpriceapp.network
 
-import com.basarcelebi.fuelpriceapp.models.IlAdi
+import com.basarcelebi.fuelpriceapp.models.FuelPrices
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -12,7 +12,7 @@ interface Api {
     suspend fun getDailyPrice(
         @Path("sehir_adi") locationName:String,
         @Query("metric") metric:Boolean = true
-    ): Response<List<IlAdi>>
+    ): Response<List<FuelPrices>>
 
 
 }

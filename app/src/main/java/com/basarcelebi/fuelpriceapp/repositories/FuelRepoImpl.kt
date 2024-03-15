@@ -1,14 +1,14 @@
 package com.basarcelebi.fuelpriceapp.repositories
 
 import com.basarcelebi.fuelpriceapp.models.BaseModel
-import com.basarcelebi.fuelpriceapp.models.IlAdi
+import com.basarcelebi.fuelpriceapp.models.FuelPrices
 import com.basarcelebi.fuelpriceapp.network.Api
 import retrofit2.Response
 
 class FuelRepoImpl(private val api: Api):FuelRepo {
 
 
-    override suspend fun getDailyPrice(locationName: String): BaseModel<List<IlAdi>> {
+    override suspend fun getDailyPrice(locationName: String): BaseModel<List<FuelPrices>> {
         return request {
             api.getDailyPrice(locationName = locationName)
         }
